@@ -1,0 +1,17 @@
+<html>
+<head>
+  <title>$(blog_title) : $(pi_bl)</title>
+</head>
+<body>
+<h1>$(blog_title)</h1>
+
+<p>
+[
+<a href="$(base_url)/">Home</a>
+|
+<a href="$(base_url)/index.rss20">RSS 2.0</a>
+|
+<a href="$(base_url)/index.atom">ATOM 1.0</a>
+]
+</p>
+
