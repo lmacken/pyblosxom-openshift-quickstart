@@ -41,9 +41,8 @@ If you don't want to use the `openshift-quickstarter`, you can easily create a n
 
 ::
 
-    rhc-create-app -a tg2 -t wsgi-3.2 -l your@email.com
-    rhc-ctl-app -a tg2 -e add-mysql-5.1 -l your@email.com
-    cd tg2app
+    rhc-create-app -a blog -t wsgi-3.2 -l your@email.com
+    cd blog
     git remote add upstream -m master git://github.com/lmacken/pyblosxom-openshift-quickstart.git
     git pull -s recursive -X theirs upstream master
     git push
@@ -53,4 +52,4 @@ Monitoring your logs
 
 ::
 
-    rhc-tail-files -a tg2app -l your@email.com
+    rhc-tail-files -a blog -l your@email.com
