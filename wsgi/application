@@ -13,7 +13,7 @@ except IOError:
     pass
 
 import Pyblosxom.pyblosxom
-application = Pyblosxom.pyblosxom.PyBlosxomWSGIApp()
+application = Pyblosxom.pyblosxom.PyblosxomWSGIApp()
 
 #
 # Below for testing only
