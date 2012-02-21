@@ -161,17 +161,17 @@ py["base_url"] = 'http://' + os.environ['OPENSHIFT_APP_DNS']
 # documentation.
 # 
 # What directory do you want your static html pages to go into?
-#py["static_dir"] = "/path/to/static/dir"
+py["static_dir"] = os.path.join(os.environ['OPENSHIFT_REPO_DIR'], 'wsgi', 'static')
 
 # What flavours should get generated?
-#py["static_flavours"] = ["html"]
+py["static_flavours"] = ["html"]
 
 # What other paths should we statically render?
 # This is for additional urls handled by other plugins like the booklist
 # and plugin_info plugins.  If there are multiple flavours you want
 # to capture, specify each:
 # ex: py["static_urls"] = ["/booklist.rss", "/booklist.html"]
-#py["static_urls"] = ["/path/to/url1", "/path/to/url2"]
+py["static_urls"] = ["/index.rss2.0", "/index.atom"]
 
 # Whether (1) or not (0) you want to create date indexes using month
 # names?  (ex. /2004/Apr/01)  Defaults to 1 (yes).

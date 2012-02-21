@@ -1,4 +1,3 @@
 #!/bin/bash
-# This is a simple build script, place your post-deploy but pre-start commands
-# in this script.  This script gets executed directly, so it could be python,
-# php, ruby, etc.
+source ~/$OPENSHIFT_APP_NAME/virtenv/bin/activate
+pyblosxom-cmd staticrender --config $OPENSHIFT_REPO_DIR/config.py --incremental
